@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #0056b3; /* Dark blue theme */
+}
+.navbar .nav-link {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #ffc107; /* Yellow on hover */
+}
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+.navbar-brand:hover {
+    color: #ffc107;
+}
+
+.hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero-slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: fade 15s infinite;
+        }
+
+        @keyframes fade {
+            0%, 33% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .cta-button {
+            background-color: #ffc107;
+            color: #0056b3;
+            font-weight: bold;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e0a800;
+            color: white;
+        }
+
+        .hero-slider img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .hero-slider img:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .hero-slider img:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+/* ---------------------hero section----------- */
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url('hero_1.jpg');
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('hero_2.jpg');
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('hero_3.jpg');
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background-color: #ffc107;
+    color: #0056b3;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+
+
+.about-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .about-section .heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .about-section .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .about-section .btn-primary {
+            background-color: #0056b3;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .about-section .btn-primary:hover {
+            background-color: #004494;
+        }
+
+        .about-section .btn-outline-primary {
+            border: 2px solid #0056b3;
+            color: #0056b3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .about-section .btn-outline-primary:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+/* ---------About section------------------ */
+
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.about-section .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.about-section .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #555;
+}
+
+.about-section .btn-primary {
+    background-color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.about-section .btn-primary:hover {
+    background-color: #004494;
+}
+
+.about-section .btn-outline-primary {
+    border: 2px solid #0056b3;
+    color: #0056b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.about-section .btn-outline-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.about-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------Service-Section---------------- */
+
+.services-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.services-section .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.services-section .description {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    border-color: #0056b3;
+}
+
+.service-box:hover .service-icon {
+    background-color: #0056b3;
+    color: white;
+}
+
+.service-box:hover .btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #0056b3;
+    background-color: #e9ecef;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+}
+
+/* -----------Testimonial Section-------------- */
+
+.testimonials-section {
+    background-color: #0056b3;
+    color: white;
+    padding: 60px 20px;
+}
+
+.testimonials-section .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.testimonials-section .description {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #dce3f1;
+}
+
+.testimonial-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.testimonial-item .quote-icon {
+    font-size: 3rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.testimonial-item .review {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-item .person-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-item .stars {
+    color: #ffc107;
+    margin-top: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #0056b3;
+}
+
+.carousel-indicators .active {
+    background-color: #004494;
+}
+
+
+/* -------Contact Section-------------- */
+
+.contact-section {
+    padding: 60px 20px;
+    /* background-color: #0056b3; */
+    background-color: white;
+    color: white;
+}
+
+.contact-section .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-section .description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.contact-section .contact-form {
+    /* background-color: white; */
+    background-color: #0056b3;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .contact-form input,
+.contact-section .contact-form textarea,
+.contact-section .contact-form button {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-section .contact-form input:focus,
+.contact-section .contact-form textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.contact-section .btn-primary {
+    background-color: white;
+    border: none;
+    color: #004494;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #378163;
+    color: white;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --------Footer Section------------- */
+
+.footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 0;
+}
+
+.footer .social-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+    color: #ffc107;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffc107;
+}
+
+.footer .copyright,
+.footer .company-name {
+    font-size: 0.9rem;
+}
